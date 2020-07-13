@@ -1,5 +1,6 @@
 # This line of code tells the test where to find the definitions of all the objects in the game.
 import game
+import time
 
 print("\n\n === Game Start ===\n\n")
 
@@ -12,5 +13,5 @@ print("Press enter to begin.")
 input()
 
 ## Have each player attack the other.
-jose.attack(lora)
-lora.attack(jose)
+battle1 = game.Battle(jose, lora)
+battle1.start()
